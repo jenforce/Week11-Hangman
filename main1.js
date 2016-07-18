@@ -1,39 +1,37 @@
 var request = require('request');
 var inquirer = require('inquirer');
 var fs = require('fs');
-var wd = require('./word.js');
-//var letter = require('./letter.js');
-
+var LetterCheck = require('./word.js');
 var drawArray = [];
+var guess;
+ var i = 0; 
+letterguess(i);
+ 
 
-//console.log(wd.gameWord+'3')
+function letterguess(){
+  inquirer.prompt([
 
-
-inquirer.prompt([
-{
-    type: "input",
-    name: "name",
-    message: "Who are you???",
-  },
-  {
+    {
     type: "input",
     name: "userGuess",
     message: "Letter?",
-  },
+    }
 
-  ]).then(function(data) {
-    var guess = data.userGuess
-      var MatchLetter = new Lettercheck(guess)
-      
-        
-      console.log("in then function")
-      console.log(guess)
-      draw();
-  });
+    ]).then(function(data) {
+      guess = data.userGuess
+      console.log(guess+'1');
+      console.log(i);
+      letterSend(guess);
+  }); 
+}
+
+  function letterSend(guess){
+     console.log(guess+'2');
+     var send = new LetterCheck(guess);
+  }
+  
 
   function draw(){
-
-//var UserLetter = new Lettercheck('secretWord', 'userGuess');
 
   var c = console.log
 
@@ -62,8 +60,6 @@ inquirer.prompt([
 
 console.log(drawArray.length)
   print(drawArray);
-
-inquirer.prompt();
 };
 
 function print(drawArray) {
@@ -71,3 +67,4 @@ function print(drawArray) {
         //console.log(drawArray[o]);
     }
     }
+

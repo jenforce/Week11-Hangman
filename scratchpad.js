@@ -1,36 +1,50 @@
+
+
+var Lettercheck = function(guess){
+  this.check = function(){
+    if ([gw.gameWord.indexOf(guess)] == -1) {
+            console.log('not matched');
+
+   },
+
+}
+}
+      console.log('in')
+
+for (var i = 0; i<3;i++){
+  inquirer.prompt();
+}
+
+
 Wk 11 
-With the files from Step 2, youre going to be putting together a 
+ - youre going to be putting together a console-based hangman app that incorporates objects, user-input and constructors in its solution.
 
-console-based hangman app that incorporates objects, user-input and constructors in its solution.
+game.js file will randomly select a word for the player.
+  requires: gamewords.js which holds all the secret words 
 
-Both letter.js and word.js should be constructor files:
 
-word.js should contain all of the methods which will check the letters guessed versus the random word selected.
+word.js constructor file - should contain all of the methods which will check the letters guessed versus the random word selected.
+    requires: game.js which holds all the secret words 
 
-letter.js should control whether or not a letter appears as a "_" or as itself on-screen.
-Your game.js file will randomly select a word for the player.
+
+letter.js constructor file - should control whether or not a letter appears as a "_" or as itself on-screen.
+  requires: word.js which provides letter or dash to write to on-screen 
+
+
+
 main.js will contain the logic of your app. Running it in Terminal/Bash will start the game.
+
+
 The app should end when a player guesses the correct word or runs out of guesses.
 Tips
 
-Program the game one piece at a time! Break the program down into fragments rather than chipping away little by little at giant, abstract problem.
-Focus on one part of the smaller problem and get some code working.
-Rinse and repeat (and remember, console.log is your friend).
-Try your best to deliver a working/playable game by the end of the deadline.
-Submit your app whether you finish or not; if you don't show us anything then we won't be able to help you with whatever programming issues you encountered this week.
-As always, if you find yourself stumped during this assignment, be sure to contact either the instructor or a TA -- we'll be glad to help!
-Working game > pretty dud. We're focusing on game mechanics, not just on the look and feel of your app.
 
-Option Two: Hangman Game - you can get 10/10
+ Were focusing on game mechanics, not just on the look and feel of your app.
 
-Watch the demo
 
-choose a theme for your game.
 
-In the example, we used an 80s theme. All the words are famous bands or musicians from the 80s. Please choose whatever theme you'd like.
-use key events to get the letter that the user typed
 
-organize your game code inside of an object, except the key events to get the letter that the user typed.
+
 
 Display the following on the page:
 

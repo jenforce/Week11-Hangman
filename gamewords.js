@@ -1,0 +1,3 @@
+
+//game words 
+exports.wordselection = { "select":['denali', 'glacier bay','grand canyon','petrified forest','saguaro','arkansas hot springs','channel islands','death valley','joshua tree','kings canyon','redwood','sequoia','yosemite','great sand dunes','mesa verde','rocky mountain','biscayne','dry tortugas','everglades','yellowstone','acadia','glacier','great basin','carlsbad caverns','cuyahoga valley','crater lake','badlands','great smoky mountains','big bend','guadalupe mountains','virgin islands','arches','bryce canyon','capitol reef','canyonlands','zion','shenandoah','mount rainier','north cascades','olympic','grand teton']};
